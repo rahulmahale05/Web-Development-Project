@@ -6,7 +6,8 @@ const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
-
+const arrow = document.getElementById("arrow");
+arrow.style.cursor = "pointer";
 for (let select of dropdowns) {
   for (currCode in countryList) {
     let newOption = document.createElement("option");
@@ -24,6 +25,15 @@ for (let select of dropdowns) {
     updateFlag(evt.target);
     });
 }
+
+arrow.addEventListener("click",()=>{
+  let val = fromCurr.value;
+  fromCurr.value = toCurr.value;
+  toCurr.value = val;
+  updateExchangeRate();
+  updateFlag(toCurr);
+  updateFlag(fromCurr);
+});
 
 const updateExchangeRate = async () => {
   let amount = document.querySelector(".amount input");

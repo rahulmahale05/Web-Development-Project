@@ -1,75 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
-h1{
-    position: absolute;
-    top: 50px;
+
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3rem;
     color: blue;
+    margin-bottom: 30px;
+    text-align: center;
 }
-h1:hover{
+
+h1:hover {
     text-shadow: 1px 1px blue;
     cursor: pointer;
 }
-button{
+
+main {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+button {
     background-color: rgb(255, 38, 38);
     width: 60px;
     height: 60px;
-    padding: 5px;
-    margin: 5px;
+    border: none;
     border-radius: 10px;
     color: black;
     cursor: pointer;
     font-size: 1.6rem;
     box-shadow: 0.6px 0.6px 1px 0.6px red;
-
+    transition: all 0.2s ease;
 }
-button:hover{
+
+button:hover {
     background-color: red;
     box-shadow: 3px 3px 8px 3px rgb(255, 0, 0);
 }
-main{
-    background-color: black;
-    border-radius: 10px;
-}
-.row:first-child{
-    padding-top: 12vh;
-}
-.row{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-div:first-child{
+
+.input-container {
     background-color: aquamarine;
-    margin: 1.6vh;
     border-radius: 10px;
-    position: relative;
+    margin-bottom: 15px;
+    padding: 10px;
 }
-div:last-child{
-    margin-bottom: 1vh;
-}
-input{
+
+input {
     background-color: aquamarine;
     border: none;
-    height: 90px;
-    width: 290px;
-    position: absolute;
-    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
     border-radius: 10px;
-    font-size: 1.6rem;
-    display: flex;
-    justify-items: end;
-    padding-top: 40px;
-    box-sizing: border-box;   
+    text-align: right;
+    padding: 10px;
+}
+
+/* 🔁 Responsive Design */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    input {
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        margin: 4px;
+    }
+
+    input {
+        height: 45px;
+        font-size: 1.2rem;
+    }
 }

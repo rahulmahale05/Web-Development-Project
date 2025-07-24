@@ -2,6 +2,7 @@ let string = "";
 let number = document.querySelectorAll("button");
 let input = document.querySelector("input");
 
+
 number.forEach(e => {
     e.addEventListener("click",(evt)=>{
         let a = evt.target.innerHTML;

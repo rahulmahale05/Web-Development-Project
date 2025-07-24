@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 60);
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    background-color: rgb(0, 0, 108);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav ul li a:hover{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left{
+    font-size: 1.7rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.firstSection{
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    margin: 5vh 0;
+    align-items: center;
+}
+.leftSection{
+    width: 25%;
+    font-size: 2.5rem;
+    margin-left: 2vw;
+}
+.rightSection{
+    width: 27%;
+    border-radius: 100%;
+}
+.rightSection img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit:fill;
+}
+.myName{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#element{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.secondSection{
+    max-width: 80vw;
+    height: 80vh;
+    margin: auto;
+}
+main hr{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    border: 0;
+    height: 1px;
+    margin: 45px 60px;
+}
+.secondSection .box{
+    background-color: #fff;
+    width: 80vw;
+    height: 1.5px;
+    margin: 56px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.secondSection .vertical{
+    height: 90px;
+    width: 1.3px;
+    background-color: #fff;
+}
+.secondSection .experience{
+    color: rgb(139, 139, 139);
+}
+.vertical img{
+    position: relative;
+    top: -30px;
+    left: -10px;
+}
+.vertical .vertical-title{
+    position: relative;
+    top: 75px;
+    left: -20px;
+}
+.vertical .vertical-desc{
+    position: relative;
+    top: 80px;
+    left: -20px;
+    color: #00ffff;
+    font-size: 10px;
+    width: 150px;
+}
+footer{
+    background-color: rgb(11, 7, 64);
+}
+.footer{
+    padding: 23px 122px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer > div{
+    width: 183px;
+}
+.footer ul{
+    list-style: none;
+}
+footer .footer-rights{
+    text-align: center;
+    color: #9b9191;
+    margin: 10px;
+}
+.btn{
+    margin: 30px 5px 5px 1px;
+    padding: 1vmin;
+    background: linear-gradient(265deg,#008ccd,#0202cd,#e100b4);
+    box-shadow: 1px 1px 4px blue;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(1805deg,#0073ff,#0000ff,#ff00cc);
+    box-shadow: 3px 3px 5px 1px blue;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.bt{
+    padding: 1vmin;
+    background: linear-gradient(265deg,#008ccd,#0202cd,#e100b4);
+    box-shadow: 1px 1px 4px blue;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.bt:hover{
+    background: linear-gradient(1805deg,#0073ff,#0000ff,#ff00cc);
+    box-shadow: 3px 3px 5px 1px blue;
+}
+.bt a{
+    text-decoration: none;
+    color: white;
+}
